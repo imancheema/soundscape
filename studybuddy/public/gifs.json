@@ -1,0 +1,32 @@
+{
+    "gifs": [
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWwxb2dveDFoOHd5czltcTRpNWIyZ3E3aTl4NmRlbnNkNG00OXU2aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ttknk7M3d3UBEeZsii/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExams4OHJteXlmMnJsdDA2azZuZDR6czRmdmNxZDZ2a2QzNmFxcmpjcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KxbHmvL3MGcctzlfdX/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzQwdG9maXlsdXprNGt6dmZpN2UwN3BkenV5bzB0NzFnZ3J2MWtzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9LZTcawH3mc8V2oUqk/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3F6bDMyc2w4aG9wY29hbHFjaXc0cWZkczFqZjIwbTFlM3E5NTlrayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RgZFvGuI4OxLjuSvRF/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDQwcWF5ZmIzb3BwYmdjOHdycmF2Z2F1anF1NGJjaTVsbHFuazB2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gH1jGsCnQBiFHWMFzh/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGNteXkyejh3cGJ0NWI3N3c2MDh0ODZpY3Q1dXlrNWtpa3RmMDZ6eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pVGsAWjzvXcZW4ZBTE/giphy.gif",
+      "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHRvNWg3djQwZ3ljNmlzNGZ4azI1M2psZ2wwcnd4bzM0dDQwejB4ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10Y4hHRwOdps1a/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2F0bzV1NjFxanFldTA1d2c2Zjhxazh1ZmplZWpjcjI5ZjNxMHdqaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qGWVA1zoivT7a/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTIwOTQzczF5dTMwdTVocDZlZG1zZjVnazhucmpjbWh3OXB0ZzB2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NKEt9elQ5cR68/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTkyZTZscXBocHphYWlqNm0yYzgxb2p3cGFmc3k2YzVkbjZicTRkMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0DEIXwTqge9RyGYM/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2RwOHNreWs5YTlqbXRsNXA5dnI5MHY4Z3hzZHBsenl5bmt0ZGdyNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jDl06sVsg4WVrCEJtS/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2t4cnRwMmNvOGZoczFxNWlndXd5bTNqZ3p6NXNrcWsxOHd1ZGw2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IHkILvQZ94BxMdBHp0/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmV5c3BncnFhdzBtY2V4OGE0MzFjcXBydXNqODdjc2JjamJ2YjBwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BbmDhO2gx3o96CpVM1/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzc3Mjk2cGNodWJiaG41Yzl4MG45bmxhanE1cG9wNDN1NzF3MXdpZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9B7XwCQZRQfQs/giphy.gif",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjNwdHZwazBpMWVkcTA2emtmcWYyd2N5OHNjMDI2ZzRjanUxeWwwMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RMwgs5kZqkRyhF24KK/giphy.gif",
+      "https://media.giphy.com/media/ssq8oGi0pPO5rMLrEV/giphy.gif?cid=ecf05e471eha19wgfne1mcbajlw1mtx46manzfc74ozknhwp&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/83xE8UcTMUnh1tGMPm/giphy.gif?cid=ecf05e47ih0enil5pr2eofap3e7v0thasgngkdw890upolou&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/QLgtN0msAekg3x7YTm/giphy.gif",
+      "https://media.giphy.com/media/vMSXa7KFGx49aeeXhe/giphy.gif?cid=790b7611jpgvgtbq3s6kcz28vg4g6wjcms3xlm62piunk8rr&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/1fnu914Z79qQpVi2xZ/giphy.gif?cid=790b7611jpgvgtbq3s6kcz28vg4g6wjcms3xlm62piunk8rr&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/gJz2I26VIESkfuIxUD/giphy.gif?cid=ecf05e47n4z1wgt82isqk0dy5ea8a206qjlaeepjf2f9rdv1&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/b29IZK1dP4aWs/giphy.gif?cid=790b76117u8ku1h76hdky21v64w03l5cfgnn7rqwvpldwmgk&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/IuVFGSQZTd6TK/giphy.gif?cid=790b76117u8ku1h76hdky21v64w03l5cfgnn7rqwvpldwmgk&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3U4a3UxaDc2aGRreTIxdjY0dzAzbDVjZmdubjdycXd2cGxkd21nayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8WfWutiUyreak/giphy.gif",
+      "https://media.giphy.com/media/5S8LH2hkd5ONY7hyXJ/giphy.gif?cid=ecf05e4798pnszomfogl9m9gvavlrba1t84ie6ghuw9xnfsn&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://media.giphy.com/media/yY0Gbq4ADqYRq/giphy.gif?cid=ecf05e4722nhmlrmi73x3uu783g7xyo74rcq8eh6fwd5g65a&ep=v1_gifs_search&rid=giphy.gif&ct=gs",
+      "https://media.giphy.com/media/eSKEWcQvCaBKo/giphy.gif?cid=ecf05e47xxwfqxqynoneprvtnx3l1se7tjuxfxirej72931r&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+    ]
+  }
+  
