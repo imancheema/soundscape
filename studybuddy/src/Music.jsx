@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Sound from "react-sound";
+import SoundComponent from "react-sound"; 
 
-function Music({ isPlaying, volume, currentSong, onFinishedPlaying }) {
+const CustomMusicPlayer = ({ isPlaying, soundVolume, selectedTrack, onTrackEnd }) => {
   useEffect(() => {
     if (window.soundManager) {
       window.soundManager.setup({ debugMode: false });
@@ -9,13 +9,13 @@ function Music({ isPlaying, volume, currentSong, onFinishedPlaying }) {
   }, []);
 
   return (
-    <Sound
-      url={currentSong}
-      playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.PAUSED}
-      onFinishedPlaying={onFinishedPlaying}
-      volume={volume}
+    <SoundComponent
+      url={selectedTrack}
+      playStatus={isPlaying ? SoundComponent.status.PLAYING : SoundComponent.status.PAUSED}
+      onFinishedPlaying={onTrackEnd}
+      volume={soundVolume}
     />
   );
-}
+};
 
-export default Music;
+export default CustomMusicPlayer;

@@ -13,6 +13,7 @@ const useBackgroundGifs = () => {
   const [previousSongIndex, setPreviousSongIndex] = useState(null);
 
   useEffect(() => {
+    // Gifs
     const fetchGifs = async () => {
       try {
         const response = await fetch("/gifs.json");
@@ -24,6 +25,7 @@ const useBackgroundGifs = () => {
       }
     };
 
+    // Songs
     const fetchSongs = async () => {
       try {
         const response = await fetch("/songs.json");
@@ -34,11 +36,11 @@ const useBackgroundGifs = () => {
         console.error("Error fetching songs: ", error);
       }
     };
-
     fetchGifs();
     fetchSongs();
   }, []);
 
+  // Gifs
   const chooseRandomGif = () => {
     const randomIndex = Math.floor(Math.random() * backgroundGifList.length);
     setPreviousBackgroundGifIndex(currentBackgroundGifIndex);
@@ -51,6 +53,7 @@ const useBackgroundGifs = () => {
     }
   };
 
+  // Songs
   const chooseRandomSong = () => {
     const randomIndex = Math.floor(Math.random() * songsList.length);
     setPreviousSongIndex(currentSongIndex);
