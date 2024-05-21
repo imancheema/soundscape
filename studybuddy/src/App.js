@@ -2,11 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 import useBackgroundGifs from "./hooks/useBackgroundGifs";
+import Music from "./Music";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const { currentBackgroundGif, choosePreviousGif, chooseRandomGif } =
-    useBackgroundGifs();
+  const [volume] = useState(100);
+  const {
+    currentBackgroundGif,
+    currentSong,
+    choosePreviousGif,
+    chooseRandomGif,
+    chooseRandomSong,
+    choosePreviousSong,
+  } = useBackgroundGifs();
 
   useEffect(() => {
     chooseRandomGif();
@@ -21,15 +29,31 @@ function App() {
       className="study-buddy-app"
       style={{ backgroundImage: `url(${currentBackgroundGif})` }}
     >
-      <button onClick={choosePreviousGif}>
+      <button
+        onClick={() => {
+          choosePreviousGif();
+          choosePreviousSong();
+        }}
+      >
         <FaBackward />
       </button>
       <button onClick={togglePlayPause}>
         {isPlaying ? <FaPause /> : <FaPlay />}
       </button>
-      <button onClick={chooseRandomGif}>
+      <button
+        onClick={() => {
+          chooseRandomGif();
+          chooseRandomSong();
+        }}
+      >
         <FaForward />
       </button>
+      <Music
+        isPlaying={isPlaying}
+        volume={volume}
+        currentSong={currentSong}
+        onFinishedPlaying={chooseRandomSong}
+      />
     </div>
   );
 }
