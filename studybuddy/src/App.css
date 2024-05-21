@@ -2,6 +2,8 @@ body,
 html {
   height: 100%;
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 .study-buddy-app {
@@ -17,9 +19,35 @@ html {
 }
 
 button {
-  background: none;
+  background-color: transparent;
   border: none;
   color: white;
-  font-size: 48px;
+  font-size: 24px;
   cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Lighten the background on hover */
+}
+
+.play-button {
+  font-size: 32px;
+}
+
+.fa-forward,
+.fa-backward {
+  font-size: 24px;
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
 }
