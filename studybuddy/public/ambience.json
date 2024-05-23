@@ -1,0 +1,20 @@
+{
+  "ambience": [
+    {
+      "name": "Rain",
+      "url": "/ambience/rain.mp3"
+    },
+    {
+      "name": "Sunny Day",
+      "url": "/ambience/sunny.mp3"
+    },
+    {
+      "name": "Keyboard Typing",
+      "url": "/ambience/keyboard.mp3"
+    },
+    {
+      "name": "Crowd",
+      "url": "/ambience/crowd.mp3"
+    }
+  ]
+}
