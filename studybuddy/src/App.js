@@ -5,14 +5,16 @@ import {
   FaPause,
   FaForward,
   FaBackward,
-  FaGithub,
+  FaBars,
+  FaTimes,
 } from "react-icons/fa";
 import useBackgroundGifs from "./hooks/useBackgroundGifs";
 import Music from "./Music";
+import AmbientSounds from "./AmbientSounds";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [volume] = useState(100);
+  const [volume, setVolume] = useState(100);
   const {
     currentBackgroundGif,
     currentSong,
@@ -20,12 +22,11 @@ function App() {
     chooseRandomGif,
     chooseRandomSong,
     choosePreviousSong,
+    ambientSoundList,
+    ambientSoundVolumes,
+    updateVolume,
   } = useBackgroundGifs();
-
-  useEffect(() => {
-    chooseRandomGif();
-    chooseRandomSong();
-  }, []);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const togglePlayPause = () => {
     setIsPlaying(!isPlaying);
@@ -41,24 +42,53 @@ function App() {
     chooseRandomSong();
   };
 
+  const handleMenuClick = () => {
+    setIsMenuOpen(true);
+  };
+
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div
       className="study-buddy-app"
       style={{ backgroundImage: `url(${currentBackgroundGif})` }}
     >
       <header className="app-header">
-        <div className="repo-link">
-          <a
-            href="https://github.com/imancheema/studybuddy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub size={20} /> {/* GitHub icon with link */}
-            readme
-          </a>
+        <div className="left-section">
+          <div className="repo-link">
+            <a
+              href="https://github.com/imancheema/studybuddy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.
+            </a>
+          </div>
+          <h1>Study With Me.</h1>
         </div>
-        <h1>Study With Me.</h1>
+        {/* <div className="menu-icon" onClick={handleMenuClick}>
+          <FaBars size={20} />
+        </div> */}
       </header>
+      <AmbientSounds
+        ambientSoundList={ambientSoundList}
+        ambientSoundVolumes={ambientSoundVolumes}
+        updateVolume={updateVolume}
+      />
+      {/* {isMenuOpen && (
+        <div className="sidebar">
+          <div className="close-btn" onClick={handleCloseMenu}>
+            <FaTimes size={20} />
+          </div>
+          <AmbientSounds
+            ambientSoundList={ambientSoundList}
+            ambientSoundVolumes={ambientSoundVolumes}
+            updateVolume={updateVolume}
+          />
+        </div>
+      )} */}
       <Music
         isPlaying={isPlaying}
         soundVolume={volume}
@@ -75,6 +105,13 @@ function App() {
         <button onClick={handleForward}>
           <FaForward />
         </button>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={volume}
+          onChange={(e) => setVolume(parseFloat(e.target.value))}
+        />
       </footer>
     </div>
   );
