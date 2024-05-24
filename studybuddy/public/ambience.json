@@ -15,6 +15,14 @@
     {
       "name": "Crowd",
       "url": "/ambience/crowd.mp3"
+    },
+    {
+      "name": "Waves",
+      "url": "/ambience/waves.mp3"
+    },
+    {
+      "name": "Rustling Leaves",
+      "url": "/ambience/leaves.mp3"
     }
   ]
 }
