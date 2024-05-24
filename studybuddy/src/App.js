@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import {
-  FaPlay,
-  FaPause,
-  FaForward,
-  FaBackward,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
+import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 import useBackgroundGifs from "./hooks/useBackgroundGifs";
 import Music from "./Music";
 import AmbientSounds from "./AmbientSounds";
@@ -68,27 +61,12 @@ function App() {
           </div>
           <h1>Study With Me.</h1>
         </div>
-        {/* <div className="menu-icon" onClick={handleMenuClick}>
-          <FaBars size={20} />
-        </div> */}
       </header>
       <AmbientSounds
         ambientSoundList={ambientSoundList}
         ambientSoundVolumes={ambientSoundVolumes}
         updateVolume={updateVolume}
       />
-      {/* {isMenuOpen && (
-        <div className="sidebar">
-          <div className="close-btn" onClick={handleCloseMenu}>
-            <FaTimes size={20} />
-          </div>
-          <AmbientSounds
-            ambientSoundList={ambientSoundList}
-            ambientSoundVolumes={ambientSoundVolumes}
-            updateVolume={updateVolume}
-          />
-        </div>
-      )} */}
       <Music
         isPlaying={isPlaying}
         soundVolume={volume}
@@ -111,6 +89,14 @@ function App() {
           max="100"
           value={volume}
           onChange={(e) => setVolume(parseFloat(e.target.value))}
+          style={{
+            background: "pink",
+            border: "1px solid pink",
+            padding: "2px",
+            height: "1px",
+            borderRadius: "30px",
+            WebkitAppearance: "none",
+          }}
         />
       </footer>
     </div>
