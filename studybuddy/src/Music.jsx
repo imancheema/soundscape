@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import SoundComponent from "react-sound"; 
+import SoundComponent from "react-sound";
 
 const CustomMusicPlayer = ({ isPlaying, soundVolume, selectedTrack, onTrackEnd }) => {
   useEffect(() => {

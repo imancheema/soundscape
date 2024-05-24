@@ -12,6 +12,10 @@ const useBackgroundGifs = () => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [previousSongIndex, setPreviousSongIndex] = useState(null);
 
+  // Ambient Sounds
+  const [ambientSoundList, setAmbientSoundList] = useState([]);
+  const [ambientSoundVolumes, setAmbientSoundVolumes] = useState({});
+
   useEffect(() => {
     // Gifs
     const fetchGifs = async () => {
@@ -36,8 +40,26 @@ const useBackgroundGifs = () => {
         console.error("Error fetching songs: ", error);
       }
     };
+
+    const fetchAmbientSounds = async () => {
+      try {
+        const response = await fetch("/ambience.json");
+        const data = await response.json();
+        setAmbientSoundList(data.ambience);
+        const initialVolumes = {};
+        data.ambience.forEach((sound) => {
+          initialVolumes[sound.name] = 0;
+        });
+        setAmbientSoundVolumes(initialVolumes);
+        console.log("Fetched Ambient Sounds: ", data.ambience);
+      } catch (error) {
+        console.error("Error fetching ambient sounds: ", error);
+      }
+    };
+
     fetchGifs();
     fetchSongs();
+    fetchAmbientSounds();
   }, []);
 
   // Gifs
@@ -68,6 +90,13 @@ const useBackgroundGifs = () => {
     }
   };
 
+  const updateVolume = (soundName, volume) => {
+    setAmbientSoundVolumes((prevVolumes) => ({
+      ...prevVolumes,
+      [soundName]: volume,
+    }));
+  };
+
   return {
     currentBackgroundGif: backgroundGifList[currentBackgroundGifIndex],
     currentSong: songsList[currentSongIndex],
@@ -75,6 +104,9 @@ const useBackgroundGifs = () => {
     choosePreviousGif,
     chooseRandomSong,
     choosePreviousSong,
+    ambientSoundList,
+    ambientSoundVolumes,
+    updateVolume,
   };
 };
 
