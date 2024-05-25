@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 import useBackgroundGifs from "./hooks/useBackgroundGifs";
@@ -19,7 +19,6 @@ function App() {
     ambientSoundVolumes,
     updateVolume,
   } = useBackgroundGifs();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const togglePlayPause = () => {
     setIsPlaying(!isPlaying);
@@ -33,14 +32,6 @@ function App() {
   const handleForward = () => {
     chooseRandomGif();
     chooseRandomSong();
-  };
-
-  const handleMenuClick = () => {
-    setIsMenuOpen(true);
-  };
-
-  const handleCloseMenu = () => {
-    setIsMenuOpen(false);
   };
 
   return (
@@ -59,7 +50,7 @@ function App() {
               github.
             </a>
           </div>
-          <h1>Study With Me.</h1>
+          <h1>Lofi Radio ⋆｡─ ⋆⋅✧⋅⋆｡</h1>
         </div>
       </header>
       <AmbientSounds
