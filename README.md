@@ -14,3 +14,18 @@ Just pick your favourite lofi tunes and mix them with customizable background so
 
 ## Technologies
 React, JavaScript, HTML/CSS.
+
+## How to Run
+1. Gather all files in local repo 
+
+```
+https://github.com/imancheema/soundscape.git
+```
+
+2. To run local react app
+```
+cd studybuddy
+```
+```
+npm start
+```
