@@ -8,7 +8,7 @@ Need the right vibe to stay focused? **Soundscape** helps you create the perfect
 Just pick your favourite lofi tunes and mix them with customizable background sounds, so that you can create the perfect environment for your study style.
 
 ## Features
-- Lofi Music
+- Lofi Music Player
 - Custom Background Sounds
 - Volume Control
 
